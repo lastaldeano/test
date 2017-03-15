@@ -8,7 +8,7 @@
 
 
 //file_put_contents('log.txt', '<br><pre>' . print_r($_POST) . '</pre>', FILE_APPEND);
-if (isset($_POST['sessionId'])) {
+
     $response = [
         'speech' => 'test text',
         'displayText' => 'test text',
@@ -58,7 +58,7 @@ if (isset($_POST['sessionId'])) {
     ];
     header('Content-Type: application/json');
     echo json_encode($response);
-}
+ 
 
 
 ?>
